@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adi Mahesh's Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <div class="topnav">
+            <div class="navTitleText">
+                <h1 style="font-weight: bold;">Adi <span style="font-weight: normal;">Mahesh</span></h1>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Me</a>
+            <input type="text" placeholder="Search" id="searchBar">
+            <a href="https://www.github.com/am-2003"><img src="{% static 'personalwebsite/images/logos/githubLogo.png' %}" style="height: 40px;"></a>
+            <a href="https://www.linkedin.com/in/adimahesh"><img src="{% static 'personalwebsite/images/logos/linkedinLogo.png' %}" style="height: 40px;"></a>
+        </div>
+        <div id="mainPageContent">
+            <div class="mainPageBox" id="featuredBlogBox">
+                <div class="mainPageBoxContent" id="featuredBlogContent">
+                    <h1>About Me</h1>
+                    <div class="about_me_links">
+                        <a href="https://drive.google.com/file/d/1p3guiVHTdheTIBVMXU_BNxpOmOOVAUS8/view?usp=sharing">CV</a>
+                        <a href="https://www.github.com/am-2003">Github</a>
+                        <a href="https://www.linkedin.com/in/adimahesh">Linkedin</a>
+                    </div>
+                    <p></p>
+                    <a href = "{% url 'about_me' %}">Read more >>></a>
+                </div>
+            </div>
+            <div class="mainPageBox" id="featuredBlogBox">
+                <img id="featuredBlogImage" src="{% static 'personalwebsite/images/blogs/cat.png' %}">
+                <div class="mainPageBoxContent" id="featuredBlogContent">
+                    <h1>Featured Blog</h1>
+                    <p>The cat (Felis catus), commonly referred to as the domestic cat or house cat, is a small domesticated carnivorous mammal. It is the only domesticated species of the family Felidae. Recent advances in archaeology and genetics have shown that the domestication of the cat occurred in the Near East around 7500 BC. It is commonly kept as a house pet and farm cat, but also ranges freely as a feral cat avoiding human contact. It is valued by humans for companionship and its ability to kill vermin. Its retractable claws are adapted to killing small prey like mice and rats. It has a strong, flexible body, quick reflexes, sharp teeth, and its night vision and sense of smell are well developed. It is a social species, but a solitary hunter and a crepuscular predator. Cat communication includes vocalizations like meowing, purring, trilling, hissing, growling, and grunting as well as cat body language. It can hear sounds too faint or too high in frequency for human ears, such as those made by small mammals. It secretes and perceives pheromones.</p>
+                    <a href = "{% url 'blog_index' %}">Read more >>></a>
+                </div>
+            </div>
+            <div class="mainPageBox" id="featuredProjectBox">
+                <img id="featuredProjectImage" src="{% static 'personalwebsite/images/blogs/chessBoard.png' %}">
+                <div class="mainPageBoxContent" id="featuredBlogContent">
+                    <h1>Featured Project</h1>
+                    <p>Languages: </p>
+                    <p>Frameworks: </p>
+                    <p>Description: </p>
+                    <a href = "https://www.github.com/am-2003">Link to Github</a>
+                    <p>Link to website</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

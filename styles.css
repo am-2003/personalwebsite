@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+
+a {
+    background-color: lightblue;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: rgb(195, 194, 194);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#searchBar {
+    font-size: 20px;
+}
+
+.navTitleText {
+    display: flex;
+    flex-direction: row;
+    font-family: 'cabin'; 
+    white-space: nowrap;
+}
+
+.topnav {
+    white-space: nonwrap;
+}
+
+.topnav a {
+    justify-content:center;
+    font-family: 'cabin'; 
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(nycBackground.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'cabin';
+    justify-content: center;
+    align-content: center;
+}
+
+#mainPageContent {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.mainPageBox img {
+    width: 50%;
+    height: fit-content;
+    border-radius: 25px;
+    padding-right: 10px;
+}
+
+.mainPageBox {
+    display: flex;
+    width: 90%;
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.mainPageBoxContent {
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.about_me_links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_me_links a {
+    border-radius: 0;
+    padding-right: 10px;
+}
+
+#myImage {
+    height: auto;
+    width: 50%;
+    border-radius: 0;
+}
